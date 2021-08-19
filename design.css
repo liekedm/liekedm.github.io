@@ -176,25 +176,25 @@
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
         p, th{
-            font-size: x-small;
+            font-size: 12px;
             line-height: 150%;
         }
         h1, h2, h3{
-            font-size: small;
+            font-size: 14px;
         }
         .txtbox h2{
-            font-size: x-small;
+            font-size: 12px;
         }
         .centered h1,.centered h2{
-            font-size: medium;
+            font-size: 16px;
         }
         .centered h1{
             border-bottom:2px solid #459991;
         }
         .taskbar a {
-            font-size: small;
+            font-size: 14px;
             padding: 5px 5px;
         }
         .main1{
@@ -268,17 +268,17 @@
 
 @media screen and (min-width: 1200px){
         p, th{
-            font-size: small;
+            font-size: 14px;
             line-height: 150%;
         }
         h1, h2, h3{
-            font-size: large;
+            font-size: 18px;
         }
         .txtbox h2{
-            font-size: small;
+            font-size: 14px;
         }
         .centered h1,.centered h2{
-            font-size: xx-large;
+            font-size: 18px;
         }
         .centered h1{
             border-bottom:3px solid #459991;
@@ -294,12 +294,12 @@
             margin-top: 50px;
         }
         .taskbar a {
-            font-size: medium;
+            font-size: 16px;
             padding: 20px 20px;
         }
         .footer{
             padding: 5px 0px;
-            font-size: small;
+            font-size: 14px;
         }
         .footer p{
             margin-left: 50px;
@@ -350,19 +350,19 @@
 }
 
 
-@media screen and (min-width: 700px) and (max-width: 1200px){
+@media screen and (min-width: 800px) and (max-width: 1200px){
         p, th{
-            font-size: small;
+            font-size: 14px;
             line-height: 150%;
         }
         h1, h2, h3{
-            font-size: medium;
+            font-size: 16px;
         }
         .txtbox h2{
-            font-size: small;
+            font-size: 14px;
         }
         .centered h1,.centered h2{
-            font-size: large;
+            font-size: 18px;
         }
         .centered h1{
             border-bottom:2px solid #459991;
@@ -378,12 +378,12 @@
             margin-top: 40px;
         }
         .taskbar a {
-            font-size: medium;
+            font-size: 16px;
             padding: 10px 10px;
         }
         .footer{
             padding: 5px 0px;
-            font-size: small;
+            font-size: 12px;
         }
         .footer p{
             margin-left: 30px;
