@@ -1,0 +1,7 @@
+- Use w3.css for ease of styling, hopefully solve the phone test resizing issue
+- Change 3 images to carousel, using w3.css
+- Make grey value a bit darker
+- Make first picture have a darker gradient from left to right with the white text on top without black shading
+- On each project page, add a one sentence description in same style as quote
+- On each project page, add a collered banner with highlightes used skills, like programming language, machine learning, user centered design, prototyping, co-design, CAD modeling
+- Change logo from Lieke de Mare - Industrial Design, to de Mare - Design
