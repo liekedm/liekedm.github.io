@@ -1,145 +1,109 @@
-    
-/* BODY */
-    body{
-        background-color: #FFFFFF;
-        margin: 0;
-    }
-
-    
-/* TASKBAR */
-    li{
-        display: inline-block;
-        float: right;
-    }
-    .taskbar{
-        background-color: #474747;
-        top: 0;
-        width: 100%;
-        overflow: hidden;
-        box-shadow: 0px 0px 10px 0px grey;
-    }
-    .taskbar a:hover {
-        color: #4A9B91;
-    }
-    .taskbar a {
-        display: block;
-        color: #E6EFEE;
-        text-align: center;
-    }
-    .logo img{
-        margin-left: 50px;
-        height: 80px;
-        position: absolute;
-    }
+html {
+  --textcolor: #242424;
+  --darkgrey: #474747;
+  --teal: #289e9a;
+  --teal_dark: #207f7c;
+  --teal_semilight: #39b3ae;
+  --teal_light: #C2E1E1;
+}
 
     
 /* TEXT */
+    p, a, h1, h2, h3, h4{
+        font-family: "Segoe UI", sans-serif;
+        line-height: 150%;
+        text-align: justify;
+        text-decoration: none;
+    }
+    
+    p, a, h4{       font-size: 1.1rem;   }
+    h1{             font-size: 2rem;   }
+    h2, h3{         font-size: 1.5rem; }
+    
+    p, a, h1, h2{  color: var(--textcolor); }
+    h3, h4{        color: var(--teal);      }
+    
+    h1, h2, h3, h3 {
+        text-align: center;
+    }
+    
     h1{
         width: 100%;
-        border-bottom: 2px solid #459991;
-        padding-bottom: 5px;
-    }
-    h1,h2,h3,p,a,th{
-        font-family: "Verdana", "Geneva", "Sans-serif";
-    }
-    h2,h3,p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    h1 {
-        margin-top: 40px;
-        margin-bottom: 20px; 
-    }
-    p,a,th{
-        color:#545454;
-        text-allign: left;
-    }
-    h1,h2{
-        color:#404040;
+        border-bottom: 2px solid var(--teal);;
+        padding-bottom: 10px;
+        margin-bottom: 40px;
         text-align: center;
     }
     h3{
-        color: #459991;
-        text-align: center;
-        width:90%;
-        margin-left: auto;
-        margin-right: auto;
         font-style: italic;
     }
-    p, .main a{
-        text-align: justify;
-    }
-    .main1, .main2{
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    a {
-       text-decoration: none;
-    }
-    
+      
 
 /* HEADER */
+    .header{
+        margin: auto;
+        box-shadow: 0px 5px 5px -5px grey;
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        top: 60px;
+    } 
     .header img{
         margin: auto;
-        text-align: center;
-        box-shadow: 0px 5px 5px -5px grey;
-        height: calc( 100vh - 70px );
+        height: calc( 100vh - 55px );
         width: 100%;
+        position: fixed;
+        z-index: -1;
     } 
-    .centered{
-        text-align: center;
+    .header .text-block {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        text-color: white;
+        top: 350px;
+        left:300px;
     }
-    .centered h1,.centered h2{
-        color: #FFFFFF;
-        text-shadow: 2px 2px 4px black;
+    .header .text-block p, .header .text-block h1, .header .text-block h3 {
+        color: white;
+        line-height: 120%;
+        text-align: left;
+        font-style: normal;
     }
 
+ /* MAIN */
+    .main{
+        width: 100%;
+        background-color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 
 /* GARLLERY */
     .gallery{
-        background-color: #e9f5f4; /*#D9E5E4;*/
+        background-color: var(--teal_light);
         width: 100%;
         text-align: center;
         padding-top: 1px;
         padding-bottom: 1px;
         box-shadow: 0px 0px 5px 0px grey;
     }
-    .txtbox{
-        background: #FFFFFF;
-        color: #FFFFFF;
-        width: 90%;
-        padding-top: 1%;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-bottom: 1%;
-    }
-    .columnpct3:hover{
+    .w3-card:hover{
         box-shadow: 0px 0px 10px 0px grey;
     }
 
     
 /* BUTTONS */
     .button{
-        background-color: #42897F;
+        background-color: var(--teal_dark);
         padding-left: 40px;
         padding-right: 40px;
         border-radius: 40px;
         display: inline-block;
     }
     .button:hover{
-        background-color: #4A9B91;
+        background-color: var(--teal_semilight);
         box-shadow: 0px 0px 5px 0px grey;
     }
     .button p{
-        color: #FFFFFF;
-    }
-    .center{
-        text-align: center;
+        color: white;
     }
     
     
@@ -159,276 +123,27 @@
     }
     
   /* TABLE */
-  th{
-      text-align: left;
-  }
-   th a{
-      text-decoration: underline;
-  }
+    th{
+        text-align: left;
+    }
+    th a{
+        text-decoration: underline;
+    }
     
-
 :target {
     display: block;
     position: relative;
     top: -70px; 
 }
 
-
-
-
-@media screen and (max-width: 800px), (pointer:none), (pointer:coarse){
-        p, th{
-            font-size: 12px;
-            line-height: 150%;
-        }
-        h1, h2, h3{
-            font-size: 14px;
-        }
-        .txtbox h2{
-            font-size: 12px;
-        }
-        .centered h1,.centered h2{
-            font-size: 16px;
-        }
-        .centered h1{
-            border-bottom:2px solid #459991;
-        }
-        .taskbar a {
-            font-size: 14px;
-            padding: 5px 5px;
-        }
-        .main1{
-            width: 85%;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-        .main2{
-            width: 70%;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
-        .footer{
-            padding: 5px 0px;
-            font-size: 30px;
-        }
-        .footer p{
-            margin-left: 10px;
-        }
-        .contact {
-            margin-right: 5px;
-        }
-        .logo img{
-            margin-left: 10px;
-            height: 50px;
-        }
-        .spc{
-            margin-right: 10px;
-        }
-        .taskbar{
-            height: 50px;
-        }
-        
-        
-        /* Columns */
-        .row{
-            display: inline;
-            margin-bottom: 30px;
-        }
-        .columntxt{
-            flex: 100%;
-            width: 100%;
-        }
-        .columntxtgap{
-            width: 0%;
-        }
-        .columnpct3{
-            flex: 100%;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0px 0px 5px 0px grey;
-            margin-bottom: 20px;
-        }
-        .columnpct2{
-            flex: 100%;
-            width: 100%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .columnpct3 img, .columnpct2 img{
-            width: 100%;
-            display: block;
-        }
-        .columnpctgap{
-            flex: 0%;
-            width: 0%;
-            text-align: center;
-        }
-}
-
-
 @media screen and (min-width: 1200px){
-        p, th{
-            font-size: 14px;
-            line-height: 150%;
-        }
-        h1, h2, h3{
-            font-size: 18px;
-        }
-        .txtbox h2{
-            font-size: 14px;
-        }
-        .centered h1,.centered h2{
-            font-size: 18px;
-        }
-        .centered h1{
-            border-bottom:3px solid #459991;
-        }
-        .main1{
-            width: 900px;
-            margin-bottom: 50px;
-            margin-top: 50px;
-        }
-        .main2{
-            width: 1200px;
-            margin-bottom: 50px;
-            margin-top: 50px;
-        }
-        .taskbar a {
-            font-size: 16px;
-            padding: 20px 20px;
-        }
-        .footer{
-            padding: 5px 0px;
-            font-size: 14px;
-        }
-        .footer p{
-            margin-left: 50px;
-        }
-        .contact {
-            margin-right: 60px;
-        }
-        .spc{
-            margin-right: 50px;
-        }
-        .taskbar{
-            height: 75px;
-        }
-        
-        /* Columns */
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 30px;
-        }
-        .columntxt{
-            flex: 47%;
-            width: 47%;
-        }
-        .columntxtgap{
-            width: 6%;
-        }
-        .columnpct3{
-            flex: 31%;
-            width: 31%;
-            text-align: center;
-            box-shadow: 0px 0px 5px 0px grey;
-        }
-        .columnpct2{
-            flex: 50%;
-            width: 50%;
-            text-align: center;
-        }
-        .columnpct3 img, .columnpct2 img{
-            width: 100%;
-            display: block;
-        }
-        .columnpctgap{
-            flex: 3.5%;
-            width: 3.5%;
-            text-align: center;
-        }      
-}
-
-
-@media screen and (min-width: 800px) and (max-width: 1200px){
-        p, th{
-            font-size: 14px;
-            line-height: 150%;
-        }
-        h1, h2, h3{
-            font-size: 16px;
-        }
-        .txtbox h2{
-            font-size: 14px;
-        }
-        .centered h1,.centered h2{
-            font-size: 18px;
-        }
-        .centered h1{
-            border-bottom:2px solid #459991;
-        }
-        .main1{
-            width: 85%;
-            margin-bottom: 40px;
-            margin-top: 40px;
-        }
-        .main2{
-            width: 90%;
-            margin-bottom: 40px;
-            margin-top: 40px;
-        }
-        .taskbar a {
-            font-size: 16px;
-            padding: 10px 10px;
-        }
-        .footer{
-            padding: 5px 0px;
-            font-size: 12px;
-        }
-        .footer p{
-            margin-left: 30px;
-        }
-        .contact {
-            margin-right: 30px;
-        }
-        .spc{
-            margin-right: 50px;
-        }
-        .taskbar{
-            height: 75px;
-        }
-        
-        /* Columns */
-        .row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-bottom: 50px;
-        }
-        .columntxt{
-            flex: 47%;
-            width: 47%;
-        }
-        .columntxtgap{
-            width: 6%;
-        }
-        .columnpct3{
-            flex: 31%;
-            width: 31%;
-            text-align: center;
-            box-shadow: 0px 0px 5px 0px grey;
-        }
-        .columnpct2{
-            flex: 50%;
-            width: 50%;
-            text-align: center;
-        }
-        .columnpct3 img, .columnpct2 img{
-            width: 100%;
-            display: block;
-        }
-        .columnpctgap{
-            flex: 3.5%;
-            width: 3.5%;
-            text-align: center;
-        }
+    .main1, .main2{
+        margin-bottom: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    .main1{     width: 1000px;    }
+    .main2{     width: 1200px;   }
+       
 }
