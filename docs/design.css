@@ -24,7 +24,7 @@ html {
         text-align: center;
     }
     h1{
-        width: 100vw;
+        width: 100%;
         border-bottom: 2px solid var(--teal);
         padding-bottom: 10px;
         margin-bottom: 40px;
@@ -138,9 +138,9 @@ html {
     
     .main1{     width: 90vw;   }
     .main2{     width: 90vw;   }
-    .col3{      width: 100vw;  }   
-    .col2{      width: 100vw;  }
-    .colgap{    width: 100vw;    }
+    .col3{      width: 100%;  }   
+    .col2{      width: 100%;  }
+    .colgap{    width: 100%;    }
     
     .phonehide{ display: none;  }
 
@@ -153,9 +153,9 @@ html {
     
     .main1{     width: 80vw;   }
     .main2{     width: 90vw;   }
-    .col3{      width: 32vw;      }   
-    .col2{      width: 48vw;      }
-    .colgap{    width: 2vw;       }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;  }
 }
@@ -169,9 +169,9 @@ html {
     
     .main1{     width: 1000px;   }
     .main2{     width: 1200px;   }
-    .col3{      width: 32vw;      }   
-    .col2{      width: 48vw;      }
-    .colgap{    width: 2vw;       }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;   }
 }
