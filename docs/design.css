@@ -85,12 +85,6 @@ html {
         padding-top: 1px;
         padding-bottom: 1px;
     }
-    .w3-row {
-        display: flex;
-    }
-    .w3-card {
-        flex:1;
-    }
 
     
 /* BUTTONS */
@@ -122,12 +116,6 @@ html {
     top: -70px; 
 }
 
-.column {
-  float: left;
-}
-
-
-
 
 
 /* PHONE */
@@ -138,12 +126,6 @@ html {
     
     .main1{     width: 90vw;    }
     .main2{     width: 90vw;    }
-    .col3{      width: 100%;    }   
-    .col2{      width: 100%;    }
-    .colgap{    width: 100%;    }
-    .col3, col2, colgap{
-        display: inline-block;
-    }
     
     .phonehide{ display: none;  }
 
@@ -156,12 +138,6 @@ html {
     
     .main1{     width: 80vw;     }
     .main2{     width: 90vw;     }
-    .col3{      width: 32%;      }   
-    .col2{      width: 48%;      }
-    .colgap{    width: 2%;       }
-    .col3, col2, colgap{
-        display: block;
-    }
     
     .phonehide{ display: block;  }
 }
@@ -175,12 +151,6 @@ html {
     
     .main1{     width: 1000px;   }
     .main2{     width: 1200px;   }
-    .col3{      width: 32%;      }   
-    .col2{      width: 48%;      }
-    .colgap{    width: 2%;       }
-    .col3, col2, colgap{
-        display: block;
-    }
     
     .phonehide{ display: block;  }
 }
