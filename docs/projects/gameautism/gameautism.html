@@ -3,41 +3,68 @@
 <html>
     
     <head>
-        <title>Lieke de Mare - Portfolio</title>
+        
+        <title>Lieke de Mare - Industrial Design</title>
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <meta name="description" content="Lieke de Mare - Industrial Design graduate portfolio" />
+        
+        <script src="smooth-scroll.js"></script>
+        
         <meta charset="utf-8">
-        <link href="../../design.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="../../design.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
     </head>
+   
     
-    <body>
-        
-        <div class="taskbar"> <ul>
-            <li><a href="../../portfolio.html" class="spc">Projects</a></li>
-            <li><a href="../../index.html">Main page</a></li>
-        </ul> <div class="logo"> <img src="../../img/logo.png" alt="logo"/> </div> </div> 
+    <body style="background: white">
         
         
-        <div class="main1">
-            <h1>MyZoo</h1>
-                <p>
-                    For some children, making social contact is hard. The game MyZoo is inspired on PokemonGo. It is a stand-alone device which lets children collect zoo animals by locking fingerprints with new people. When a new fingerprint is scanned, a new animal will appear in the virtual zoo. This way, children are rewarded for making social contacts. This stimulates the social-emotional development and helps them further in life. While order is important for autistic children it is important to integrate the product into the normal life of the child, this can be done with simple actions like feeding the animals every day.
-                </p>
-                <p>
-                    The design has a fun childish color and can be easily hold by the handle on the top. Rubber parts provide good grip to prevent dropping. The zoo theme was chosen to match the interest of both boys and girls.
-                </p>
-            
-            <div class="row">
-                <div class="columnpct2"> <img src="1.png"/> </div> 
-                <div class="columnpct2"> <img src="2.png"/> </div>
+        <div class="w3-bar" style="background:var(--darkgrey); position:fixed; top: 0; height: 60px; z-index: 1">
+            <div class="phonehide">
+                <div class="logo"> <img src="../../img/Icon 100x100.png" alt="logo" style="height:55px; margin-left:5%; position:absolute;"/> </div> 
+                <a data-scroll href="../../index.html" class="w3-bar-item w3-button w3-padding-16 w3-hover-none w3-text-white w3-hover-text-teal" style="margin-left:8%; font-size: 1.1rem">Lieke de Mare | Industrial Design</a>
             </div>
-                
-            <div class="center"> </br> </br> <a href="../../portfolio.html"> <div class="button"> <p>Back</p> </div> </a> </div>
+            <a data-scroll href="../../index.html#contact" class="w3-bar-item w3-button w3-right w3-padding-16 w3-hover-none w3-text-white w3-hover-text-teal" style="margin-right:5%; font-size: 1.1rem">Contact</a>
+            <a data-scroll href="../../portfolio.html" class="w3-bar-item w3-button w3-right w3-padding-16 w3-hover-none w3-text-white w3-hover-text-teal" style="font-size: 1.1rem">Portfolio</a>
+            <a data-scroll href="../../index.html#about" class="w3-bar-item w3-button w3-right w3-padding-16 w3-hover-none w3-text-white w3-hover-text-teal" style="font-size: 1.1rem">About me</a>
         </div>
         
-        </br> </br> <div class="gallery"> </br> </div>
-        <div class="footer">
-            <p> Portfolio Lieke de Mare - Student Industrial Design at the Technical University of Eindhoven &copy; 2020 Lieke de Mare</p>
+        
+        <div class="main1" style="margin-top: 130px;">
+            <h1>MyZoo</h1>
+            <p>
+For some children, making social contact is hard. The game MyZoo is inspired on PokemonGo. It is a stand-alone device which lets children collect zoo animals by locking fingerprints with new people. When a new fingerprint is scanned, a new animal will appear in the virtual zoo. This way, children are rewarded for making social contacts. This stimulates the social-emotional development and helps them further in life. While order is important for autistic children it is important to integrate the product into the normal life of the child, this can be done with simple actions like feeding the animals every day.
+<br><br>
+The design has a fun childish color and can be easily hold by the handle on the top. Rubber parts provide good grip to prevent dropping. The zoo theme was chosen to match the interest of both boys and girls.
+            </p>
+            
+            </br>
+            <div class="w3-cell-row">
+                <div class="w3-cell"> <img src="1.png" style="width:100%"/> </div> 
+                <div class="w3-cell"> <img src="2.png" style="width:100%"/> </div>
+            </div>
+                   
+            <div class="w3-center" > <a href="../../portfolio.html"> <div class="button w3-hover-shadow" style="margin-top: 50px;">  <p>See more projects</p> </div> </a> </div>
         </div>
+        
+        <div class="footer" style="background:var(--darkgrey); height: 120px; border-top: 20px solid var(--teal_light); margin-top: 100px">
+            <p style="margin-left: 5%;"> Liekedemare@outlook.com</p>
+            <p style="margin-left: 5%;"> Portfolio Lieke de Mare - Student Industrial Design at the Technical University of Eindhoven &copy; 2021 Lieke de Mare</p>
+        </div>
+        
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {speed: 1000});;
+        </script>
         
     </body>
     

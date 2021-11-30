@@ -1,7 +1,7 @@
 html {
   --textcolor: #242424;
   --darkgrey: #474747;
-  --teal: #289e9a;
+  --teal: #009688;
   --teal_dark: #207f7c;
   --teal_semilight: #39b3ae;
   --teal_light: #C2E1E1;
@@ -31,6 +31,9 @@ html {
     }
     h4{
         font-weight: bold;
+    }
+    th {
+        font-weight: normal;
     }
       
 
@@ -89,7 +92,7 @@ html {
         background-color: var(--teal_dark);
         padding-left: 40px;
         padding-right: 40px;
-        border-radius: 40px;
+        border-radius: 20px;
         display: inline-block;
     }
     .button:hover{
@@ -144,9 +147,9 @@ html {
     
     .main1{     width: 80%;   }
     .main2{     width: 90%;   }
-    .col3{      width: 30%;   }   
-    .col2{      width: 47.5%;   }
-    .colgap{    width: 5%;    }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;  }
 }
@@ -160,9 +163,9 @@ html {
     
     .main1{     width: 1000px;   }
     .main2{     width: 1200px;   }
-    .col3{      width: 30%;      }   
-    .col2{      width: 47.5%;      }
-    .colgap{    width: 5%;       }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;   }
 }
