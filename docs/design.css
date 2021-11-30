@@ -85,6 +85,12 @@ html {
         padding-top: 1px;
         padding-bottom: 1px;
     }
+    .w3-row {
+        display: flex;
+    }
+    .w3-card {
+        flex:1;
+    }
 
     
 /* BUTTONS */
