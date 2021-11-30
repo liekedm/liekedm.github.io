@@ -11,55 +11,49 @@ html {
 /* TEXT */
     p, a, h1, h2, h3, h4{
         font-family: "Segoe UI", sans-serif;
-        line-height: 150%;
         text-align: justify;
         text-decoration: none;
     }
     
-    p, a, h4{       font-size: 1.1rem;   }
-    h1{             font-size: 2rem;   }
-    h2, h3{         font-size: 1.5rem; }
-    
-    p, a, h1, h2{  color: var(--textcolor); }
-    h3, h4{        color: var(--teal);      }
-    
-    h1, h2, h3, h3 {
-        text-align: center;
+    p, a, h1, h2, h4{  color: var(--textcolor); }
+    h3{ color: var(--teal); 
+        font-style: italic;
     }
     
+    h1, h2 {
+        text-align: center;
+    }
     h1{
         width: 100%;
-        border-bottom: 2px solid var(--teal);;
+        border-bottom: 2px solid var(--teal);
         padding-bottom: 10px;
         margin-bottom: 40px;
-        text-align: center;
     }
-    h3{
-        font-style: italic;
+    h4{
+        font-weight: bold;
     }
       
 
 /* HEADER */
     .header{
         margin: auto;
-        box-shadow: 0px 5px 5px -5px grey;
         height: 100vh;
         width: 100%;
         position: relative;
         top: 60px;
     } 
     .header img{
-        margin: auto;
-        height: calc( 100vh - 55px );
-        width: 100%;
         position: fixed;
         z-index: -1;
+        height: calc(100vh - 100px);
+        background-position: right;
+        overflow: visible;
+        background-repeat: no-repeat;
+        background-size: cover;
     } 
     .header .text-block {
         position: absolute;
-        text-color: white;
-        top: 350px;
-        left:300px;
+        transform: translateY(30vh);
     }
     .header .text-block p, .header .text-block h1, .header .text-block h3 {
         color: white;
@@ -75,6 +69,10 @@ html {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+    .main1, .main2{
+        margin-left: auto;
+        margin-right:auto;
+    }
 
 /* GARLLERY */
     .gallery{
@@ -83,10 +81,6 @@ html {
         text-align: center;
         padding-top: 1px;
         padding-bottom: 1px;
-        box-shadow: 0px 0px 5px 0px grey;
-    }
-    .w3-card:hover{
-        box-shadow: 0px 0px 10px 0px grey;
     }
 
     
@@ -100,7 +94,6 @@ html {
     }
     .button:hover{
         background-color: var(--teal_semilight);
-        box-shadow: 0px 0px 5px 0px grey;
     }
     .button p{
         color: white;
@@ -108,27 +101,11 @@ html {
     
     
 /* FOOTER */
-    .footer{
-        background-color: #474747;
-        width: 100%;
-        height: 50px;
-        bottom: 0;
-    }
     .footer p {
-        color: #E6EFEE;
+        color: white;
     }
     
-    icons{
-        display: inline-block;
-    }
-    
-  /* TABLE */
-    th{
-        text-align: left;
-    }
-    th a{
-        text-decoration: underline;
-    }
+ 
     
 :target {
     display: block;
@@ -136,14 +113,56 @@ html {
     top: -70px; 
 }
 
-@media screen and (min-width: 1200px){
-    .main1, .main2{
-        margin-bottom: 50px;
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right:auto;
-    }
-    .main1{     width: 1000px;    }
+.column {
+  float: left;
+}
+
+
+
+
+
+/* PHONE */
+    p, a, h1, h2, h3, h4{    line-height: 120%;    }
+    p, a, h4{       font-size: 1rem;   }
+    h1{             font-size: 1.5rem;   }
+    h2, h3{         font-size: 1.3rem; }
+    
+    .main1{     width: 90%;   }
+    .main2{     width: 90%;   }
+    .col3{      width: 100%;  }   
+    .col2{      width: 100%;  }
+    .colgap{    width: 100%;    }
+    
+    .phonehide{ display: none;  }
+
+/* LAPTOP/DESKTOP */
+@media screen and (min-width: 992px){
+    p, a, h1, h2, h3, h4{    line-height: 150%;    }
+    p, a, h4{       font-size: 1.1rem;   }
+    h1{             font-size: 2rem;   }
+    h2, h3{         font-size: 1.5rem; }
+    
+    .main1{     width: 80%;   }
+    .main2{     width: 90%;   }
+    .col3{      width: 30%;   }   
+    .col2{      width: 47.5%;   }
+    .colgap{    width: 5%;    }
+    
+    .phonehide{ display: block;  }
+}
+
+/* LAPTOP/DESKTOP */
+@media screen and (min-width: 1250px){
+    p, a, h1, h2, h3, h4{    line-height: 150%;    }
+    p, a, h4{       font-size: 1.1rem;   }
+    h1{             font-size: 2rem;   }
+    h2, h3{         font-size: 1.5rem; }
+    
+    .main1{     width: 1000px;   }
     .main2{     width: 1200px;   }
-       
+    .col3{      width: 30%;      }   
+    .col2{      width: 47.5%;      }
+    .colgap{    width: 5%;       }
+    
+    .phonehide{ display: block;   }
 }
