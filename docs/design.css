@@ -41,7 +41,7 @@ html {
     .header{
         margin: auto;
         height: 100vh;
-        width: 100vw;
+        width: 100%;
         position: relative;
         top: 60px;
     } 
@@ -67,7 +67,7 @@ html {
 
  /* MAIN */
     .main{
-        width: 100vw;
+        width: 100%;
         background-color: white;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -80,10 +80,8 @@ html {
 /* GARLLERY */
     .gallery{
         background-color: var(--teal_light);
-        width: 100vw;
+        width: 100%;
         text-align: center;
-        padding-top: 1px;
-        padding-bottom: 1px;
     }
 
     
@@ -116,6 +114,12 @@ html {
     top: -70px; 
 }
 
+.column {
+  float: left;
+}
+
+
+
 
 
 /* PHONE */
@@ -124,8 +128,11 @@ html {
     h1{             font-size: 1.2rem;   }
     h2, h3{         font-size: 1.1rem;   }
     
-    .main1{     width: 90vw;    }
-    .main2{     width: 90vw;    }
+    .main1{     width: 90%;    }
+    .main2{     width: 90%;    }
+    .col3{      width: 100%;    }   
+    .col2{      width: 100%;    }
+    .colgap{    width: 100%;    }
     
     .phonehide{ display: none;  }
 
@@ -136,8 +143,11 @@ html {
     h1{             font-size: 2rem;     }
     h2, h3{         font-size: 1.5rem;   }
     
-    .main1{     width: 80vw;     }
-    .main2{     width: 90vw;     }
+    .main1{     width: 80%;     }
+    .main2{     width: 90%;     }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;  }
 }
@@ -151,6 +161,9 @@ html {
     
     .main1{     width: 1000px;   }
     .main2{     width: 1200px;   }
+    .col3{      width: 32%;      }   
+    .col2{      width: 48%;      }
+    .colgap{    width: 2%;       }
     
     .phonehide{ display: block;  }
 }
