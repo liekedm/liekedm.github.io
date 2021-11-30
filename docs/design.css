@@ -133,8 +133,8 @@ html {
 /* PHONE */
     p, a, h1, h2, h3, h4{    line-height: 120%;    }
     p, a, h4{       font-size: 1rem;   }
-    h1{             font-size: 1.5rem;   }
-    h2, h3{         font-size: 1.3rem; }
+    h1{             font-size: 1.2rem;   }
+    h2, h3{         font-size: 1.1rem; }
     
     .main1{     width: 90%;   }
     .main2{     width: 90%;   }
