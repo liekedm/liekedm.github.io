@@ -5,7 +5,9 @@ html {
   --teal_dark: #207f7c;
   --teal_semilight: #39b3ae;
   --teal_light: #C2E1E1;
+  
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
     
