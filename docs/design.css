@@ -87,6 +87,9 @@ html {
         width: 100%;
         text-align: center;
     }
+    .w3container{
+        text-align: left;
+    }
 
     
 /* BUTTONS */
@@ -109,7 +112,7 @@ html {
     .footer p {
         color: white;
     }
-    
+   
  
     
 :target {
