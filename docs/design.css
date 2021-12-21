@@ -18,22 +18,21 @@ html {
         text-decoration: none;
     }
     
-    p, a, h1, h2, h4{  color: var(--textcolor); }
-    h3{ color: var(--teal); 
-        font-style: italic;
-    }
-    
-    h1, h2 {
-        text-align: center;
+    p, a, h1, h2, h4{  
+        color: var(--textcolor); 
     }
     h1{
+        text-align: center;
         width: 100%;
         font-weight: 500;
         border-bottom: 2px solid var(--teal);
         padding-bottom: 10px;
-        margin-bottom: 60px;
     }
-    h4{
+    h3{ 
+        color: var(--teal); 
+        font-style: italic;
+    }
+    h1, h2, h4{
         font-weight: bold;
     }
     th {
@@ -86,6 +85,8 @@ html {
         background-color: var(--teal_light);
         width: 100%;
         text-align: center;
+        margin-top: 100px;
+        padding-bottom: 50px;
     }
     .w3container{
         text-align: left;
